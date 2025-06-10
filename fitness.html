@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Women's Fitness Tips</title>
+
+  <style>
+    body {
+      background-color: #f2e3e2;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    a {
+      color: black;
+      padding-right: 20px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
+    /* Active link is bold */
+    a.active {
+      font-weight: bold;
+    }
+
+    .nav-bar {
+      background-color: white;
+      padding: 15px 20px;
+    }
+
+    .nav-items {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-items input[type="search"] {
+      margin-left: auto;
+      margin-right: 20px;
+      border-radius: 10px;
+      height: 25px;
+      padding: 5px;
+    }
+
+    fieldset {
+      border: none;
+      border-top: 1px solid black;
+      text-align: center;
+      padding: 10px;
+    }
+    fieldset legend {
+      font-weight: bold;
+      font-size: 30px;
+      color: #b83280;
+    }
+
+    .container {
+      background-color: beige;
+      margin: 20px auto;
+      max-width: 1000px;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .text-content {
+      color: #b83280;
+      font-size: 18px;
+      line-height: 1.7;
+      flex: 1;
+    }
+
+    .text-content h2 {
+      text-align: center;
+      color: #a83279;
+    }
+
+    .text-content ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    .image-content img {
+      width: 250px;
+      height: 200px;
+      margin-top: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+    }
+    .container:hover {
+      transform: scale(1.05);
+    }
+
+    .image-content img:hover {
+      transform: scale(1.1);
+    }
+
+
+    @keyframes imgScaleAnim {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .empty {
+      height: 60px;
+    }
+  .start{
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="start"></div>
+  <fieldset>
+    <legend style="font-size: 30px; color:#b83280">THE Womens WORLD</legend>
+  </fieldset>
+
+  <div class="nav-bar">
+    <div class="nav-items">
+      <a href="home.html">Home</a>
+      <a href="finance.html">Finance</a>
+      <a href="fitness.html" class="active">Fitness</a>
+      <a href="travel.html">Travel</a>
+      <input type="search" class="search" placeholder="Search...">
+      <a href="login.html">Login</a>
+    </div>
+  </div>
+
+  <div class="empty"></div>
+
+  <div class="container">
+    <div class="text-content">
+      <h2>Why Fitness is Important for Women</h2>
+      <ul>
+        <li><strong>Boosts Mental Health:</strong> Exercise helps reduce anxiety and improve mood.</li>
+        <li><strong>Improves Strength:</strong> Builds bone density and core stability, especially important as women age.</li>
+        <li><strong>Manages Weight:</strong> Regular activity helps maintain a healthy body composition.</li>
+        <li><strong>Regulates Hormones:</strong> Physical activity supports menstrual and hormonal balance.</li>
+        <li><strong>Empowers Confidence:</strong> A strong body leads to a strong mind and higher self-esteem.</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="fitness1.PNG" alt="Fitness importance">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="text-content">
+      <h2>Fitness Tips Every Woman Should Follow</h2>
+      <ul>
+        <li><strong>Mix cardio & strength:</strong> Combine walking, cycling, or dancing with resistance workouts.</li>
+        <li><strong>Stay consistent:</strong> It's better to exercise regularly than to go all-out once a week.</li>
+        <li><strong>Warm-up & stretch:</strong> Always prepare your body and avoid injuries.</li>
+        <li><strong>Hydrate well:</strong> Drink water before, during, and after workouts.</li>
+        <li><strong>Listen to your body:</strong> Rest when needed and don't overtrain.</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="fintness2.PNG" alt="Fitness tips">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="text-content">
+      <h2>Top Fitness Apps & Resources</h2>
+      <ul>
+        <li><strong>FitOn:</strong> Free workouts with celebrity trainers, no equipment needed.</li>
+        <li><strong>MyFitnessPal:</strong> Track your meals and exercise with ease.</li>
+        <li><strong>7 Minute Workout:</strong> Great for beginners short on time.</li>
+        <li><strong>Yoga for Beginners:</strong> Perfect for stress relief and flexibility.</li>
+        <li><strong>Blogilates or Chloe Ting:</strong> YouTube workouts made fun and effective.</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="fitness3.PNG" alt="Fitness apps">
+    </div>
+  </div>
+
+</body>
+</html>

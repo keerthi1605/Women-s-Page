@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+
+  <style>
+    body {
+      background-image: url('Cool Sunrise.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #f2e3e2;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      background-color: beige;
+      padding: 30px 40px;
+      text-align: center;
+      margin: 180px auto;
+      width: 320px;
+      border-radius: 10px;
+      box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+      border: none;
+      padding: 7px 15px;
+      margin: 5px;
+      color: white;
+      background-color: #f497b6;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    input {
+      height: 30px;
+      width: 260px;
+      margin: 8px 0;
+      padding-left: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .box a {
+      color: #b83280;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .box a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>Log In</h1>
+    <!-- <p>Don't have an account? <a href="#">Sign up</a></p> -->
+
+    <form onsubmit="handleLogin(event)">
+      <input id="email" type="email" placeholder="Email"><br>
+      <input id="password" type="password" placeholder="Password"><br><br>
+
+      <button type="button" onclick="forgotPassword()">Forgot Password?</button>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    function handleLogin(event) {
+  event.preventDefault();
+
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
+
+  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+  if (!email || !password) {
+    alert("Please fill in both email and password.");
+    return;
+  }
+
+  if (!email.match(emailPattern)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  alert("Login successful!");
+
+  window.location.href = "home.html";
+}
+
+
+    function forgotPassword() {
+      alert("Redirecting to password recovery (not implemented yet )");
+      // In real usage, redirect to: window.location.href = "forgot-password.html";
+    }
+  </script>
+
+</body>
+</html>

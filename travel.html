@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Women's Travel Advice</title>
+
+  <style>
+    body {
+      background-color: #f2e3e2;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    a {
+      color: black;
+      padding-right: 20px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
+    .nav-bar {
+      background-color: white;
+      padding: 15px 20px;
+    }
+
+    .nav-items {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-items input[type="search"] {
+      margin-left: auto;
+      margin-right: 20px;
+      border-radius: 10px;
+      height: 25px;
+      padding: 5px;
+    }
+
+    fieldset {
+      border: none;
+      border-top: 1px solid black;
+      text-align: center;
+      padding: 10px;
+    }
+
+    fieldset legend {
+      font-weight: bold;
+      font-size: 30px;
+      color: #b83280;
+    }
+
+    .container {
+      background-color: beige;
+      margin: 20px auto;
+      max-width: 1000px;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    /* Scale up container on hover */
+    .container:hover {
+      transform: scale(1.05);
+    }
+
+    .text-content {
+      color: #b83280; /* Nice pink shade */
+      font-size: 18px;
+      line-height: 1.7;
+      flex: 1;
+    }
+
+    .text-content h2 {
+      text-align: center;
+      color: #a83279;
+    }
+
+    .text-content ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .image-content img {
+      width: 250px;
+      height: 200px;
+      margin-top: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+    }
+
+    .image-content img:hover {
+      transform: scale(1.1);
+    }
+
+
+    @keyframes imgScaleAnim {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .empty {
+      height: 60px;
+    }
+  .start{
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="start"></div>
+  <fieldset>
+    <legend style="font-size: 30px; color:#b83280">THE Womens WORLD</legend>
+  </fieldset>
+
+  <nav class="nav-bar">
+    <div class="nav-items">
+      <a href="home.html">Home</a>
+      <a href="finance.html">Finance</a>
+      <a href="fitness.html">Fitness</a>
+      <a href="travel.html" style="font-weight:bold;">Travel</a>
+      <input type="search" class="search" placeholder="Search...">
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <div class="empty"></div>
+
+  <div class="container">
+    <div class="text-content">
+      <h2>Top 5 Safest Countries for Women Travelers</h2>
+      <ul>
+        <li><strong>Iceland:</strong> Known for low crime rates and strong gender equality.</li>
+        <li><strong>Japan:</strong> Clean, respectful, and efficient transport makes solo travel safe.</li>
+        <li><strong>New Zealand:</strong> Friendly people and stunning nature make it ideal for exploring.</li>
+        <li><strong>Canada:</strong> Politically stable and culturally inclusive.</li>
+        <li><strong>Portugal:</strong> Safe, scenic, and solo-traveler-friendly.</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="japan.PNG" alt="Safe countries">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="text-content">
+      <h2>Travel Safety Tips for Women</h2>
+      <ul>
+        <li><strong>Research local customs:</strong> Respect cultural norms to stay safe and avoid conflict.</li>
+        <li><strong>Stay connected:</strong> Share your itinerary and location with a trusted friend or family member.</li>
+        <li><strong>Limit alcohol:</strong> Stay alert in unfamiliar places.</li>
+        <li><strong>Use safe transport:</strong> Stick to trusted apps or pre-arranged taxis.</li>
+        <li><strong>Blend in:</strong> Dress modestly and keep valuables out of sight.</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="maps.PNG" alt="Safety tips">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="text-content">
+      <h2>Recommended Travel Essentials for Women</h2>
+      <ul>
+        <li><strong>Portable door lock:</strong> Adds an extra layer of room security.</li>
+        <li><strong>Safety alarm:</strong> A loud deterrent in emergencies.</li>
+        <li><strong>Hidden money pouch:</strong> Keeps cash and documents safe.</li>
+        <li><strong>Offline maps:</strong> Navigation without Wi-Fi or data.</li>
+        <li><strong>Translation app:</strong> Communicate quickly in foreign languages.</li>
+      </ul>
+    </div>
+    <div class="image-content">
+      <img src="womenconnect.PNG" alt="Essentials">
+    </div>
+  </div>
+
+</body>
+</html>
